@@ -55,7 +55,8 @@ export default function Contact() {
               Together
             </h2>
             <p style={{ color: "var(--muted)", fontSize: 15, lineHeight: 1.8, marginBottom: 10 }}>
-              Open to full-time roles, freelance projects, and exciting engineering challenges. Let&apos;s connect.
+              Open to full-time roles, freelance projects, and exciting engineering challenges.
+              Willing to relocate to any country. Expected CTC: 8–15 LPA (Negotiable). Let&apos;s connect.
             </p>
             <div className="contact-links">
               <a className="contact-link" href="mailto:lalithkumargoud999@gmail.com">

@@ -18,6 +18,7 @@ export default function Hero() {
           <p className="hero-desc">
             3 years building enterprise-grade web applications. Expert in React.js, Next.js, Node.js &amp; .NET.
             Delivered 6+ projects with 40% performance improvements across manufacturing, media and tech industries.
+            Willing to relocate anywhere globally.
           </p>
           <div className="hero-ctas">
             <a href="#contact" className="btn-primary">
@@ -44,6 +45,12 @@ export default function Hero() {
             </div>
             <div className="contact-item">
               <span>📞</span> +91 8465050345
+            </div>
+            <div className="contact-item">
+              <span>🌍</span> Willing to Relocate
+            </div>
+            <div className="contact-item">
+              <span>💰</span> Expected CTC: 8–15 LPA (Negotiable)
             </div>
           </div>
         </div>
