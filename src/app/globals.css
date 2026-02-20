@@ -24,6 +24,30 @@ body {
   cursor: none;
 }
 
+.hero-badges-row {
+  display: flex; gap: 10px; flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.hero-badge--highlight {
+  border-color: var(--accent) !important;
+  background: rgba(0, 212, 255, 0.08);
+  color: var(--accent) !important;
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+.hero-badge--green {
+  border-color: var(--accent3) !important;
+  background: rgba(16, 185, 129, 0.08);
+  color: var(--accent3) !important;
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(0, 212, 255, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(0, 212, 255, 0.4); }
+}
+.contact-item--highlight {
+  color: var(--accent) !important;
+  font-weight: 700;
+}
+
 /* NOISE OVERLAY */
 body::before {
   content: '';

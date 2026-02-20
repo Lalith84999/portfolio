@@ -7,6 +7,10 @@ export default function Hero() {
       <div className="hero-grid">
         <div>
           <div className="hero-badge">Available for opportunities</div>
+          <div className="hero-badges-row">
+            <div className="hero-badge hero-badge--highlight">🌍 Open to Relocate Globally</div>
+            <div className="hero-badge hero-badge--green">🏠 Remote &amp; Hybrid Ready</div>
+          </div>
           <h1 className="hero-name">
             <span className="line1">Chittibomma</span>
             <span className="line1" style={{ fontSize: "0.75em", letterSpacing: "-2px", marginBottom: "4px" }}>
@@ -46,8 +50,11 @@ export default function Hero() {
             <div className="contact-item">
               <span>📞</span> +91 8465050345
             </div>
-            <div className="contact-item">
-              <span>🌍</span> Willing to Relocate
+            <div className="contact-item contact-item--highlight">
+              <span>🌍</span> Willing to Relocate Anywhere Globally
+            </div>
+            <div className="contact-item contact-item--highlight">
+              <span>🏠</span> Remote · Hybrid · On-site
             </div>
             <div className="contact-item">
               <span>💰</span> Expected CTC: 8–15 LPA (Negotiable)
