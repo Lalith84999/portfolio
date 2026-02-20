@@ -1,8 +1,51 @@
 "use client";
 
+import { useState, FormEvent } from "react";
+
+// ──────────────────────────────────────────────
+// STEP 1: Go to https://formspree.io and create a free form
+// STEP 2: Replace the ID below with your Formspree form ID
+const FORMSPREE_ID = "YOUR_FORMSPREE_ID"; // e.g. "xyzabcde"
+// ──────────────────────────────────────────────
+
 export default function Contact() {
-  const handleSubmit = () => {
-    alert("Message sent! (Wire up your backend or Formspree)");
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+
+    if (!form.name || !form.email || !form.message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    setStatus("sending");
+
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          message: form.message,
+        }),
+      });
+
+      if (res.ok) {
+        setStatus("sent");
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -39,27 +82,63 @@ export default function Contact() {
             </div>
           </div>
           <div>
-            <div className="contact-form">
+            <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label className="form-label">Your Name</label>
-                <input className="form-input" type="text" placeholder="John Doe" />
+                <input
+                  className="form-input"
+                  type="text"
+                  name="name"
+                  placeholder="John Doe"
+                  value={form.name}
+                  onChange={handleChange}
+                  required
+                />
               </div>
               <div className="form-group">
                 <label className="form-label">Email</label>
-                <input className="form-input" type="email" placeholder="you@company.com" />
+                <input
+                  className="form-input"
+                  type="email"
+                  name="email"
+                  placeholder="you@company.com"
+                  value={form.email}
+                  onChange={handleChange}
+                  required
+                />
               </div>
               <div className="form-group">
                 <label className="form-label">Message</label>
-                <textarea className="form-textarea" placeholder="Tell me about the opportunity..." />
+                <textarea
+                  className="form-textarea"
+                  name="message"
+                  placeholder="Tell me about the opportunity..."
+                  value={form.message}
+                  onChange={handleChange}
+                  required
+                />
               </div>
+
+              {status === "sent" && (
+                <p style={{ color: "var(--accent3)", fontFamily: "'Space Mono', monospace", fontSize: 12 }}>
+                  ✓ Message sent successfully! I&apos;ll get back to you soon.
+                </p>
+              )}
+              {status === "error" && (
+                <p style={{ color: "#ef4444", fontFamily: "'Space Mono', monospace", fontSize: 12 }}>
+                  ✕ Something went wrong. Please email me directly.
+                </p>
+              )}
+
               <button
                 className="btn-primary"
+                type="submit"
                 style={{ alignSelf: "flex-start" }}
-                onClick={handleSubmit}
+                disabled={status === "sending"}
               >
-                Send Message
+                {status === "sending" ? "Sending..." : "Send Message"}
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
