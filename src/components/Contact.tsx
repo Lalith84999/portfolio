@@ -2,12 +2,6 @@
 
 import { useState, FormEvent } from "react";
 
-// ──────────────────────────────────────────────
-// STEP 1: Go to https://formspree.io and create a free form
-// STEP 2: Replace the ID below with your Formspree form ID
-const FORMSPREE_ID = "YOUR_FORMSPREE_ID"; // e.g. "xyzabcde"
-// ──────────────────────────────────────────────
-
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -27,13 +21,14 @@ export default function Contact() {
     setStatus("sending");
 
     try {
-      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      const res = await fetch("https://formsubmit.co/ajax/lalithkumargoud999@gmail.com", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           name: form.name,
           email: form.email,
           message: form.message,
+          _subject: `Portfolio Contact: ${form.name}`,
         }),
       });
 
