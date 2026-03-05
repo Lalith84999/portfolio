@@ -119,16 +119,6 @@ nav.scrolled {
 }
 .nav-links a:hover { color: var(--accent); }
 .nav-links a:hover::after { transform: scaleX(1); }
-.nav-resume {
-  color: var(--accent) !important;
-  border: 1px solid var(--accent);
-  padding: 6px 16px;
-  font-size: 10px !important;
-  letter-spacing: 2px;
-  transition: all 0.2s;
-}
-.nav-resume:hover { background: var(--accent); color: #000 !important; }
-.nav-resume::after { display: none !important; }
 
 /* HERO */
 #hero {
