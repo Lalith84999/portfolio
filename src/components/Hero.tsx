@@ -6,10 +6,11 @@ export default function Hero() {
       <div className="glow-orb orb2" />
       <div className="hero-grid">
         <div>
-          <div className="hero-badge">Available for opportunities</div>
           <div className="hero-badges-row">
+            <div className="hero-badge">Available for opportunities</div>
             <div className="hero-badge hero-badge--highlight">🌍 Open to Relocate Globally</div>
             <div className="hero-badge hero-badge--green">🏠 Remote &amp; Hybrid Ready</div>
+            <div className="hero-badge hero-badge--green">🚀 Immediate Joiner for Full-Time Roles</div>
           </div>
           <h1 className="hero-name">
             <span className="line1">Chittibomma</span>
@@ -30,6 +31,9 @@ export default function Hero() {
             </a>
             <a href="#projects" className="btn-outline">
               View Work
+            </a>
+            <a href="/Resume.pdf" download="LalithResume.pdf" className="btn-outline btn-resume">
+              📄 Download Resume
             </a>
           </div>
         </div>
@@ -57,7 +61,7 @@ export default function Hero() {
               <span>🏠</span> Remote · Hybrid · On-site
             </div>
             <div className="contact-item">
-              <span>💰</span> Expected CTC: 8–15 LPA (Negotiable)
+              <span>💰</span> Expected CTC: 11–20 LPA (Negotiable)
             </div>
           </div>
         </div>

@@ -119,6 +119,16 @@ nav.scrolled {
 }
 .nav-links a:hover { color: var(--accent); }
 .nav-links a:hover::after { transform: scaleX(1); }
+.nav-resume {
+  color: var(--accent) !important;
+  border: 1px solid var(--accent);
+  padding: 6px 16px;
+  font-size: 10px !important;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+}
+.nav-resume:hover { background: var(--accent); color: #000 !important; }
+.nav-resume::after { display: none !important; }
 
 /* HERO */
 #hero {
@@ -213,6 +223,8 @@ h1.hero-name .line2 {
   transition: all 0.2s;
 }
 .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+.btn-resume { border-color: var(--accent); color: var(--accent); }
+.btn-resume:hover { background: var(--accent); color: #000; }
 
 /* STATS CARD */
 .hero-right { position: relative; }
@@ -281,7 +293,7 @@ h1.hero-name .line2 {
 .orb2 { width: 400px; height: 400px; background: rgba(124,58,237,0.05); bottom: -100px; left: -100px; }
 
 /* SECTION */
-section { padding: 100px 60px; max-width: 1400px; margin: auto; }
+section { padding: 30px 60px; max-width: 1400px; margin: auto; }
 .section-label {
   font-family: 'Space Mono', monospace;
   font-size: 11px;
@@ -305,7 +317,7 @@ section { padding: 100px 60px; max-width: 1400px; margin: auto; }
 }
 
 /* SKILLS */
-#skills { background: var(--surface); padding: 100px 60px; max-width: none; }
+#skills { background: var(--surface); padding: 30px 60px; max-width: none; }
 #skills > * { max-width: 1400px; margin-left: auto; margin-right: auto; }
 .skills-container { max-width: 1400px; margin: auto; }
 .skills-grid {
@@ -478,18 +490,23 @@ section { padding: 100px 60px; max-width: 1400px; margin: auto; }
 .project-card:hover { background: var(--surface2); }
 .project-num {
   font-family: 'Space Mono', monospace;
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 700;
   color: var(--border);
   position: absolute;
   right: 30px; top: 20px;
   line-height: 1;
+  opacity: 0.9;
+  z-index: 0;
+  pointer-events: none;
 }
 .project-name {
   font-family: 'Syne', sans-serif;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 6px;
+  position: relative;
+  z-index: 1;
 }
 .project-client {
   font-family: 'Space Mono', monospace;
@@ -544,7 +561,7 @@ section { padding: 100px 60px; max-width: 1400px; margin: auto; }
 }
 
 /* CONTACT */
-#contact { background: var(--surface); max-width: none; padding: 100px 60px; }
+#contact { background: var(--surface); max-width: none; padding: 30px 60px; }
 .contact-inner { max-width: 1400px; margin: auto; }
 .contact-grid {
   display: grid;

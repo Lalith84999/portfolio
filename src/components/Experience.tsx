@@ -16,7 +16,7 @@ const EXPERIENCES: ExpData[] = [
     date: "Jun 2023 – Present",
     company: "Scutoid Technologies Pvt Ltd · Hyderabad, India",
     points: [
-      "Led full-stack development of 6+ enterprise projects using React.js, Next.js, Node.js & .NET serving 3 major clients including XDlinx Labs and Mythri Movie Makers",
+      "Led full-stack development of 6+ enterprise projects using React.js, Next.js, Node.js & .NET serving 3 major clients including XDlinx Space Labs and Mythri Movie Makers",
       "Designed Manufacturing Execution System (MES) handling real-time data for 10,000+ daily transactions",
       "Migrated enterprise database from MongoDB to PostgreSQL — 100,000+ records, 35% query performance improvement, zero downtime",
       "Architected containerized applications via Docker & Kubernetes with 99.9% uptime",
