@@ -32,7 +32,7 @@ export default function Hero() {
             <a href="#projects" className="btn-outline">
               View Work
             </a>
-            <a href="/Resume.pdf" download="LalithResume.pdf" className="btn-outline btn-resume">
+            <a href="/resume.pdf" download="LalithResume.pdf" className="btn-outline btn-resume">
               📄 Download Resume
             </a>
           </div>

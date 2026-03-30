@@ -67,13 +67,17 @@ export default function Contact() {
                 <div className="cl-icon">📞</div>
                 <div className="cl-text">+91 8465050345</div>
               </a>
-              <a className="contact-link" href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a className="contact-link" href="https://github.com/Lalith84999" target="_blank" rel="noopener noreferrer">
                 <div className="cl-icon">🐙</div>
-                <div className="cl-text">github.com/lalithkumargoud</div>
+                <div className="cl-text">github.com/Lalith84999</div>
               </a>
-              <a className="contact-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a className="contact-link" href="https://linkedin.com/in/lalith-kumar-goud-chittibomma-b253a0245" target="_blank" rel="noopener noreferrer">
                 <div className="cl-icon">💼</div>
-                <div className="cl-text">linkedin.com/in/lalithkumargoud</div>
+                <div className="cl-text">linkedin.com/in/lalith-kumar-goud-chittibomma-b253a0245</div>
+              </a>
+              <a className="contact-link" href="https://lalithfullstack.dev" target="_blank" rel="noopener noreferrer">
+                <div className="cl-icon">🌐</div>
+                <div className="cl-text">lalithfullstack.dev</div>
               </a>
             </div>
           </div>
