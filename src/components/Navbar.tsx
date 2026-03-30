@@ -37,7 +37,7 @@ export default function Navbar() {
       <nav ref={navRef} className={scrolled ? "scrolled" : ""}>
         <div className="nav-logo">LK.dev</div>
         <div className="nav-links">
-          <a href="/resume.pdf" download="LalithResume.pdf">Resume</a>
+          <a href="/Resume.pdf" download="LalithResume.pdf">Resume</a>
           {NAV_ITEMS.map((item) => (
             <a key={item.href} href={item.href} onClick={(e) => handleNavClick(e, item.href)}>
               {item.label}
@@ -58,7 +58,7 @@ export default function Navbar() {
             {item.label}
           </a>
         ))}
-        <a href="/resume.pdf" download="LalithResume.pdf" className="nav-resume">Resume</a>
+        <a href="/newreume.pdf" download="LalithResume.pdf" className="nav-resume">Resume</a>
       </div>
     </>
   );

@@ -75,10 +75,6 @@ export default function Contact() {
                 <div className="cl-icon">💼</div>
                 <div className="cl-text">linkedin.com/in/lalith-kumar-goud-chittibomma-b253a0245</div>
               </a>
-              <a className="contact-link" href="https://lalithfullstack.dev" target="_blank" rel="noopener noreferrer">
-                <div className="cl-icon">🌐</div>
-                <div className="cl-text">lalithfullstack.dev</div>
-              </a>
             </div>
           </div>
           <div>
