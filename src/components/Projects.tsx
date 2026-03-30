@@ -14,21 +14,21 @@ const PROJECTS: ProjectData[] = [
   {
     num: "01",
     name: "Spacelinx (MES) V3",
-    client: "XDlinx Space Labs · Mar 2024 – Present (10 months)",
+    client: "XDlinx Space Labs · Mar 2024 – Present (12 months)",
     desc: "Led database migration from MongoDB to PostgreSQL with comprehensive schema redesign. Implemented advanced analytics and real-time monitoring features using GraphQL for efficient data querying. Deployed containerized application on Kubernetes cluster with auto-scaling and load balancing. Achieved 35% improvement in query performance through PostgreSQL optimization. Built SSR pages with Next.js for improved SEO and faster initial page loads.",
     tech: ["React.js", "Next.js", "Node.js", "PostgreSQL", ".NET", "C#", "Express.js", "GraphQL", "Docker", "Kubernetes", "HTML5", "CSS3"],
   },
   {
     num: "02",
     name: "Manufacturing Execution System V2",
-    client: "XDlinx Space Labs · Nov 2023 – Mar 2024 (5 months)",
+    client: "XDlinx Space Labs · Sep 2023 – Mar 2024 (6 months)",
     desc: "Developed complete MERN stack application from scratch with enterprise-level features. Built real-time data monitoring tools using React Query for efficient server state management. Implemented OAuth 2.0 authentication and role-based access control for secure user management. Integrated .NET backend for robust enterprise processes and microservices architecture.",
     tech: ["React.js", "Node.js", "MongoDB", "Express.js", ".NET", "C#", "React Query", "OAuth 2.0", "HTML5", "CSS3"],
   },
   {
     num: "03",
     name: "CineBuddy — Film Industry Asset Management System",
-    client: "Mythri Movie Makers · Mar 2024 – Present",
+    client: "Mythri Movie Makers · Mar 2024 – May 2025 (14 months)",
     desc: "Built end-to-end digital asset management platform for tracking movie production assets including scripts, footage, VFX files, and media archives. Developed role-based dashboards for producers, directors, and production teams to manage budgets, schedules, and asset workflows. Implemented real-time asset tracking and version control for large media files across multiple film productions. Designed GraphQL APIs for efficient querying of production metadata, asset catalogs, and crew assignment data.",
     tech: ["React.js", "Next.js", "Node.js", "PostgreSQL", ".NET", "C#", "Express.js", "GraphQL", "Docker", "Kubernetes", "HTML5", "CSS3"],
   },
@@ -42,16 +42,9 @@ const PROJECTS: ProjectData[] = [
   {
     num: "05",
     name: "Corporate Website for Scutoid Technologies",
-    client: "Sep 2023 – Oct 2023 (2 months)",
+    client: "July 2023 – Sep 2023 (3 months)",
     desc: "Designed and developed custom WordPress theme from scratch matching brand guidelines. Created dynamic product catalog, career portal, and achievement timeline. Configured modern build pipeline using Webpack and NPM for asset optimization. Achieved 95+ PageSpeed score through performance optimization and lazy loading.",
     tech: ["WordPress", "PHP", "JavaScript", "jQuery", "HTML5", "CSS3", "Webpack", "NPM"],
-  },
-  {
-    num: "06",
-    name: "Books Keeping System",
-    client: "XDlinx Space Labs",
-    desc: "Financial books management system built with React.js, React Query for efficient server state management, C# backend and PostgreSQL database.",
-    tech: ["React.js", "React Query", "C#", "PostgreSQL"],
   },
 ];
 
