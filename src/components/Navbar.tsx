@@ -58,7 +58,7 @@ export default function Navbar() {
             {item.label}
           </a>
         ))}
-        <a href="/newreume.pdf" download="LalithResume.pdf" className="nav-resume">Resume</a>
+        <a href="/Resume.pdf" download="LalithResume.pdf" className="nav-resume">Resume</a>
       </div>
     </>
   );
